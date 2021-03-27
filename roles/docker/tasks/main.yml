@@ -12,7 +12,7 @@
     src: /etc/ansible/k8s-deploy/
     dest: /home/ubuntu/
 - name: Docker build
-  shell: docker build srirammk18/py-db:latest .
+  shell: docker build -t srirammk18/py-db:latest .
 - name: Docker push
   shell: docker push srirammk18/py-db:latest
   
