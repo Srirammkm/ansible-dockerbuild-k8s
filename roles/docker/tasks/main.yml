@@ -9,7 +9,7 @@
   shell: docker login --username srirammk18 --password $(cat pass)
 - name: copy dockerfile
   copy:
-    src: /etc/ansible/k8s-deploy/*
+    src: /etc/ansible/k8s-deploy/
     dest: /home/ubuntu/
 - name: Docker build
   shell: docker build srirammk18/py-db:latest .
