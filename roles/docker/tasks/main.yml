@@ -1,0 +1,10 @@
+---
+# tasks file for docker
+
+- name: copy file
+  copy:
+    src: /home/ubuntu/pass
+    dest: /home/ubuntu/
+- name: docker login
+  shell: docker login --username srirammk18 --password $(cat pass)
+
