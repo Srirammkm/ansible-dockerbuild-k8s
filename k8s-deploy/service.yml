@@ -7,6 +7,6 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 3333
+    nodePort: 30003
   selector:
     app: py
