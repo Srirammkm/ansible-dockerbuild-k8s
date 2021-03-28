@@ -1,9 +1,4 @@
 # k8s-CI-CD
 Deployment Project
-GitHub --> Jenkins --> Kubernetes Cluster
-                  \
-                   \
-                 Ansible
-                     \
-                      \
-                    Docker Build
+GitHub --> Jenkins --> Ansible --> Docker --> Kubernetes Cluster
+               
