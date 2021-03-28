@@ -3,7 +3,7 @@ import mysql.connector
 from flask import Flask, render_template, request
 app = Flask(__name__)
 mydb = mysql.connector.connect(
-  #host in which DB is running. In this case IKS cluste.
+  #host in which DB is running. IP address of DB server and  Port 
   host="54.254.50.94",
   port=30002,
   user="root",
