@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 mydb = mysql.connector.connect(
   #host in which DB is running. In this case IKS cluste.
-  host="ec2-13-213-10-101.ap-southeast-1.compute.amazonaws.com",
+  host="54.254.50.94",
   port=30002,
   user="root",
   password="root",
