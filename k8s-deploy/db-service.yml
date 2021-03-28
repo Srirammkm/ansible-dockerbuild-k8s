@@ -5,13 +5,12 @@ metadata:
   labels:
     app: db
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: db
   ports:
   - port: 3306
     targetPort: 3306
-    nodePort: 30002
     protocol: TCP
     name: mysql
  
