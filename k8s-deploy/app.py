@@ -20,7 +20,7 @@ def index():
         lastName = details['lname']
         val = [(firstName, lastName)]
         sql = "INSERT INTO MyUsers(firstName, lastName) VALUES (%s, %s)"
-        mycursor.executemany(sql, val)
+        mycursor.execute(sql, val)
         mydb.commit()
     return render_template('index.html')
 
