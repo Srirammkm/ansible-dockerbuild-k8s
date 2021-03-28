@@ -5,4 +5,4 @@ WORKDIR /app/
 RUN pip install flask
 RUN pip install mysql-connector-python
 EXPOSE 80
-CMD [ "python","app2.py"]
+CMD [ "python","app.py"]
